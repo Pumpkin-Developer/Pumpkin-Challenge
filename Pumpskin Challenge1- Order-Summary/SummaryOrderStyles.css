@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #E0E8FF;
+    font-family: sans-serif;
+}
+
+.Summary-Container {
+    margin: 100px auto;
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.Order-Summary-Header {
+    color: #28395F;
+    margin: 25px auto 20px auto;
+}
+
+.Order-Summary-Text {
+    color: #A9ACCA;
+    margin: 0 auto 20px auto;
+    width: 60%;
+}
+
+.Cover {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.Price-Container {
+    background-color: #F8F9FE;
+    padding: 10px;
+    text-align: center;
+    margin: 1px auto 25px auto;
+    width: 80%;
+    border-radius: 20px;
+}
+
+.Detailes {
+    display: inline-block;
+    margin-top: 2.3%;
+}
+
+.Music-Icon {
+    width: 20%;
+    height: 20%;
+    float: left;
+}
+
+.Changes {
+    float: right;
+    margin-top: 5%;
+    margin-right: 6%;
+}
+
+.Changes:hover,
+.Changes:active {
+    text-decoration: none;
+}
+
+.Price-Container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.Pay,
+.Cancel {
+    display: block;
+    width: 80%;
+    text-decoration: none;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.Pay {
+    background-color: #382AE1;
+    color: #fff;
+    box-shadow: 0px 3px 15px rgb(221 219 251), 0px 17px 11px #e9e8fc;
+}
+
+.Pay:hover,
+.Pay:active {
+    box-shadow: 0px 13px 15px rgb(221 219 251), 0px 17px 11px #e9e8fc;
+    background-color: #766CF1;
+}
+
+.Cancel,
+.Cancel:active {
+    color: #80859A;
+}
+
+.Cancel:hover {
+    color: #333;
+}
+
+@media screen and (max-width:600px) {
+    .Summary-Container {
+        width: 75%;
+    }
+    .Price-Container {
+        background-color: #fff;
+    }
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #E0E8FF;
+    }
+}
+
+@media screen and (min-width:601px) and (max-width:900px) {
+    body {
+        background-image: url(images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #E0E8FF;
+    }
+    .Summary-Container {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:901px) {
+    .Summary-Container {
+        width: 30%;
+        margin-top: 50px;
+    }
+    .Detailes {
+        margin-top: 5%;
+    }
+    .Changes {
+        margin-top: 8%;
+    }
+}
